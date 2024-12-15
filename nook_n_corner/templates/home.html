@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nook 'n Corner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body style="margin-bottom: 1pc;"> <!--style="background-color: #8B4C70;"-->
+    
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #8B4C70;" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-family: DancingScript; font-size: 2em; color: white;" href="{{ url_for('index') }}">Nook 'n Corner</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('account') }}">Account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container" style="margin-top: 2pc;" align=center>
+        <h3 style="font-family: DancingScriptBold; font-size: 2em;">Category</h3>
+    </div>
+     
+    <div align=center style="margin-top: 1pc;">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.QLYEh-6Gy0n_1zMS-Y7gAAHaE7?rs=1&pid=ImgDetMain" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Grocery</h5>
+                      <a class="btn btn-primary" href="{{ url_for('grocery') }}">Explore</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.P1ODRiF6r6T1Y-i2C0YtgwHaFj?rs=1&pid=ImgDetMain" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Accessory</h5>
+                      <a class="btn btn-primary" href="{{ url_for('accessory') }}">Explore</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.gobankingrates.com/wp-content/uploads/2020/01/woman-shopping-for-new-wardrobes-iStock-637750968.jpg" class="card-img-top" alt="..." style="height: 150px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Clothes</h5>
+                      <a class="btn btn-primary" href="{{ url_for('clothing') }}">Explore</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="container" style="margin-top: 2pc;" align=center>
+      <h3>Best deals</h3>
+      <div>
+          <div class="container text-center">
+              <h4>CLOTHING </h4>
+              <br>
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                  
+              <div class="row row-cols-4">
+                <div class="col">
+
+                  <img alt="" src="https://cdn.shopify.com/s/files/1/0237/9409/0048/products/fall113_800x.jpg?v=1582995735" width="50">
+                </div>
+                <div class="col">                    
+                  <img alt="" src="https://i.pinimg.com/originals/54/8a/a5/548aa5735d1318a04568c52f92335b4a.jpg" width="50">
+                </div>
+                <div class="col">
+                  <img alt="" src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/leviv/leviv209461d685/leviv209461d685_1646673751479_2-0._QL90_UX564_.jpg" width=55 height="75">
+              </div>
+                <div class="col">
+                  <img alt="" src="https://cdn.sareeka.com/image/data2020/embroidered-silk-saree-141027.jpg" width="50" height="75">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2110544/2018/4/13/11523616815835-Vishudh-Women-Navy-Blue-Yoke-Design-Straight-Kurta-9101523616815644-1.jpg" width="50">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://cdn.shopify.com/s/files/1/1105/1322/products/DeepTealBlueDesignerEmbroideredSatinAnarkaliGown_1_-Saira_sBoutique_1024x1024.jpg?v=1584162595" width="50" height="67">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://cdn.shopify.com/s/files/1/1384/4105/files/plain-silk-saree-with-golden-border_2048x2048.jpg?v=1529738800" width="50">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="http://rukmini1.flixcart.com/image/300/300/xif0q/dress/a/i/h/3xl-ravina-1-granthi-original-imagfff3agnzqhnv.jpeg" width="50">
+                </div>
+                               </div>
+            </div>
+            <h4>20% Discount</h4>
+          </div>
+      </div>
+      </div>
+        
+  </div>
+
+ 
+      <div>
+          <div class="container text-center" align=center style=margin-left:1pc>
+              <br>
+              <div class="card" style="width: 18rem;" align=center >
+                  <div class="card-body" align=center>
+                  
+              <div class="row row-cols-4" align=center margin-left>
+                <div class="col">
+
+                  <img alt="" src="https://i.etsystatic.com/23727656/r/il/e493e4/2728661579/il_fullxfull.2728661579_41vb.jpg" width="50">
+                </div>
+                <div class="col">                    
+                  <img alt="" src="https://i.pinimg.com/736x/b2/30/c7/b230c774bb3f55e118e8175ed6bf54d7--maroon-color-silk-shirts.jpg" width="60" height="80">
+                </div>
+                <div class="col">
+                  <img alt="" src="https://i.pinimg.com/originals/52/ae/f9/52aef9460bb8530680bdbf0cd2970c4d.jpg" width=60 height="79">
+              </div>
+                <div class="col">
+                  <img alt="" src="https://modone.com/eng_pl_Mens-shirt-with-short-sleeves-K552-black-15611_4.jpg" width="50" height="80">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://handcmediastorage.blob.core.windows.net/productimages/NY/NYPFY011-G01-143702-800px-1040px.jpg" width="50">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://ilarge.lisimg.com/image/6133517/740full-bernardo-arriagada.jpg" width="50" height="67">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://m.media-amazon.com/images/I/41tVKlbnQWL._AC_.jpg" width="50" height="67">
+                </div>
+                <div class="col">
+                  <br>
+                  <img src="https://i.pinimg.com/originals/1a/15/bd/1a15bd899740b1b63989470f787c9b11.jpg" width="50" height="67">
+                </div>
+                               </div>
+            </div>
+            <h4>10% Discount</h4>
+          </div>
+      </div>
+      <div>
+
+        <div class="container text-center" align=center style=margin-left:1pc>
+            <br>
+            <div class="card" style="width: 18rem;" align=center >
+                <div class="card-body" align=center>
+                
+            <div class="row row-cols-4" align=center>
+              <div class="col">
+
+                <img alt="" src="https://2.bp.blogspot.com/-_Yy6IwvV1Kc/Uz6mcva_l-I/AAAAAAAAKUc/8Vo_0aEUiks/s1600/Child+Dress+Design+2014+08.jpg" width="50" height="75">
+              </div>
+              <div class="col">                    
+                <img alt="" src="https://www.4prom.co.uk/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/C/H/CHK020-02/Jewel-Sleeveless-Chic-Kids-Prom-Dresses-CHK020-CHK020-32.jpg" width="50" height="80">
+              </div>
+              <div class="col">
+                <img alt="" src="https://cdn.shopify.com/s/files/1/0996/1812/products/FALL20CPSET3PGL_620x.jpg?v=1604684203" width=55 height="79">
+            </div>
+              <div class="col">
+                <img alt="" src="https://i5.walmartimages.com/asr/bc1bba39-eb5f-4e1e-b080-f5f2395c13de_1.74f1757b350f45cdf0bfc7d984a76713.jpeg" width="55" height="75">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://i.pinimg.com/originals/23/52/d5/2352d59f2835cb00bbe3f5e2393453f1.png" width="60"  height="70">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71nN2sfy8BL._UL1500_.jpg" width="50">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://www.dhresource.com/0x0s/f2-albu-g1-M00-0F-D1-rBVaGVSnXrmAIbfQAANCzWskXIw466.jpg/baby-boy-wedding-bow-tie-occasion-christening.jpg" width="50" height="67">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://i.pinimg.com/736x/16/28/3e/16283e624c2af26c683a2ebdf1c39fd8.jpg" width="50" height="67">
+              </div>
+                             </div>
+          </div>
+          <h4>15% Discount</h4>
+        </div>
+    </div>
+<br>
+    <h2 align="center">Grocery</h2>
+        <div class="container text-center" align=center style=margin-left:1pc>
+            <br>
+            <div class="card" style="width: 18rem;" align=center >
+                <div class="card-body" align=center>
+                
+            <div class="row row-cols-4" align=center margin-left>
+              <div class="col">
+
+                <img alt="" src="https://fabwoman.ng/wp-content/uploads/2019/01/peanut-oil-health-benefits-3.jpg" width="60" height="67">
+              </div>
+              <div class="col">                    
+                <img alt="" src="https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/90003598_XL1.jpg" width="50" height="70">
+              </div>
+              <div class="col">
+                <img alt="" src="https://www.elmundoeats.com/wp-content/uploads/2017/10/Dhal-lentils-raw.jpg" width=55 height="75">
+            </div>
+              <div class="col">
+                <img alt="" src="https://www.uzhaviorganics.com/wp-content/uploads/2021/01/Green-Dhal.jpg" width="55" height="75">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://cdn.shopify.com/s/files/1/0591/6609/products/heartalmondsFB_1024x1024.jpg?v=1626463918" width="60"  height="70">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://www.10faq.com/assets/img/mustard-health-benefits-01.jpg" width="50" height="70">
+              </div>
+              <div class="col">
+                <br>
+                <img src="https://www.healthbenefitstimes.com/9/gallery/mustard-seeds/Black-mustard-seeds.jpg" width="50" height="67">
+              </div>
+              <div class="col">
+                <br>
+                <img alt="g" src="https://th.bing.com/th/id/R.cbe628795700e25b980629b5b4cefa8a?rik=V7zSvBxUXjmTqA&riu=http%3a%2f%2fmedia2.popsugar-assets.com%2ffiles%2f2014%2f11%2f13%2f660%2fn%2f1922153%2fbd19a2c4e3c5480f_shutterstock_115307500w3bEgI.xxxlarge_2x%2fi%2fHoney.jpg&ehk=TN3012tm4PZoV5EsLDFCZUqtfVSfII9qTdrqtFHY7V0%3d&risl=&pid=ImgRaw&r=0" width="50" height="67">
+              </div>
+                             </div>
+          </div>
+          <h4>25% Discount</h4>
+        </div>
+    </div>
+
+
+    <style>
+    .center-block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    @font-face {
+        font-family: "DancingScript";
+        src: url("{{ url_for('static', filename='DancingScript.woff') }}") format("woff"); 
+    }
+    @font-face {
+        font-family: "DancingScriptBold";
+        src: url("{{ url_for('static', filename='DancingScript-Bold.woff') }}") format("woff"); 
+    }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
